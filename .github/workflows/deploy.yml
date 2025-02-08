@@ -17,9 +17,11 @@ jobs:
       #MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CONNECTION_PROTOCOL: mongodb
       #MONGODB_CLUSTER_ADDRESS: cluster0.ntrwp.mongodb.net
-      MONGODB_CLUSTER_ADDRESS: mongodb #Refer label from services
-      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_CLUSTER_ADDRESS: mongodb # Refer label from services
+      #MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      #MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: root # Refer label from services
+      MONGODB_PASSWORD: example # Refer label from services
       PORT: 8080
     services:
       mongodb: 
